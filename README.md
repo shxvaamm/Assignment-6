@@ -1,4 +1,4 @@
-# PS06 — Restaurant Menu & Table Order System
+# Restaurant Menu & Table Order System
 
 A full-stack web application for restaurant digital dining, featuring customer menu browsing, table selection, order placement, server-side GST billing, customer order management, staff order workflow coordination, and admin analytics dashboard.
 

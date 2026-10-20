@@ -1,7 +1,7 @@
 {
   "name": "restaurant-backend",
   "version": "1.0.0",
-  "description": "Backend API for PS06: Restaurant Menu & Table Order System",
+  "description": "Backend API for Restaurant Menu & Table Order System",
   "main": "server.js",
   "type": "module",
   "scripts": {

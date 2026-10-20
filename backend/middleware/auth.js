@@ -11,7 +11,7 @@ export const authenticateUser = (req, res, next) => {
   }
 
   try {
-    const secret = process.env.JWT_SECRET || 'ps06_restaurant_jwt_secret_2026_xyz'
+    const secret = process.env.JWT_SECRET || 'restaurant_jwt_secret_2026_xyz'
     const decoded = jwt.verify(token, secret)
     req.user = decoded
     next()

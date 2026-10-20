@@ -42,7 +42,7 @@ export const register = async (req, res) => {
 
     const savedUser = await newUser.save()
 
-    const secret = process.env.JWT_SECRET || 'ps06_restaurant_jwt_secret_2026_xyz'
+    const secret = process.env.JWT_SECRET || 'restaurant_jwt_secret_2026_xyz'
     const token = jwt.sign(
       {
         userId: savedUser._id,
@@ -89,7 +89,7 @@ export const login = async (req, res) => {
       return res.status(401).json({ message: 'Invalid email or password' })
     }
 
-    const secret = process.env.JWT_SECRET || 'ps06_restaurant_jwt_secret_2026_xyz'
+    const secret = process.env.JWT_SECRET || 'restaurant_jwt_secret_2026_xyz'
     const token = jwt.sign(
       {
         userId: user._id,

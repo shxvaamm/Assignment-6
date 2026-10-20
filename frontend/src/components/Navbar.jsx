@@ -18,7 +18,6 @@ function Navbar({ user, onLogout, totalCartCount }) {
           <span className="brand-icon">🍽️</span>
           <div>
             <span className="brand-title">Campus Bites</span>
-            <span className="brand-tag">PS06</span>
           </div>
         </Link>
       </div>

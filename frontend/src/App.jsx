@@ -161,7 +161,7 @@ function App() {
       </Routes>
 
       <footer className="footer">
-        <p><strong>PS06: Restaurant Menu &amp; Table Order System</strong></p>
+        <p><strong>Restaurant Menu &amp; Table Order System</strong></p>
         <p>College Assignment &bull; Full Stack Ordering &amp; Management System</p>
       </footer>
     </div>

@@ -111,7 +111,7 @@ function OrderDetailPage({ token }) {
           <div className="receipt-header">
             <span className="brand-icon" style={{ fontSize: '2rem' }}>🍽️</span>
             <h2>Campus Bites Restaurant</h2>
-            <p className="receipt-subtitle">Official Dining Receipt &bull; PS06 Table Ordering</p>
+            <p className="receipt-subtitle">Official Dining Receipt &bull; Table Ordering</p>
           </div>
 
           <div className="receipt-meta-grid">
