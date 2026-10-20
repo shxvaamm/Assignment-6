@@ -10,9 +10,6 @@ function TableSelector({
     <section className="table-selector-section" id="tables">
       <div className="table-selector-header">
         <h2 className="section-title">Select Your Dining Table</h2>
-        <p className="section-subtitle">
-          Choose an available table in the restaurant before placing your order
-        </p>
       </div>
 
       <div className="customer-name-wrapper">

@@ -162,7 +162,6 @@ function App() {
 
       <footer className="footer">
         <p><strong>Restaurant Menu &amp; Table Order System</strong></p>
-        <p>College Assignment &bull; Full Stack Ordering &amp; Management System</p>
       </footer>
     </div>
   )

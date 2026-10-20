@@ -183,11 +183,7 @@ function HomePage({ user, token, cart, setCart }) {
   return (
     <main className="main-content" id="home">
       <header className="hero-section">
-        <span className="hero-badge">Restaurant Menu &amp; Table Order System</span>
         <h1 className="hero-title">Select Table &amp; Order Fresh</h1>
-        <p className="hero-subtitle">
-          Pick your restaurant table, browse live dishes from MongoDB, and place your order directly to the kitchen.
-        </p>
         <div className="hero-actions">
           <a href="#tables" className="btn-primary">Choose Table</a>
           <a href="#menu" className="btn-secondary">Browse Menu</a>
@@ -210,7 +206,6 @@ function HomePage({ user, token, cart, setCart }) {
 
       <section className="menu-section" id="menu">
         <h2 className="section-title">Our Menu</h2>
-        <p className="section-subtitle">Real-time dishes loaded directly from MongoDB</p>
 
         <MenuSearch
           search={search}
