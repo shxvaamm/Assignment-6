@@ -44,7 +44,7 @@ function TableSelector({
                 } ${!isAvailable ? 'table-card-disabled' : 'table-card-available'}`}
                 onClick={() => {
                   if (isAvailable) {
-                    onSelectTable(table.tableNumber)
+                    onSelectTable(isSelected ? null : table.tableNumber)
                   }
                 }}
                 role="button"
@@ -74,7 +74,7 @@ function TableSelector({
 
                 <div className="table-card-action">
                   {isSelected ? (
-                    <span className="selected-indicator">✓ Selected</span>
+                    <span className="selected-indicator">✓ Selected (Click to unselect)</span>
                   ) : isAvailable ? (
                     <span className="select-prompt">Click to Select</span>
                   ) : (
@@ -89,9 +89,26 @@ function TableSelector({
 
       <div className="table-selection-banner">
         {selectedTable ? (
-          <p className="banner-selected">
-            ✅ You have selected <strong>Table #{selectedTable}</strong> for your order.
-          </p>
+          <div className="banner-selected" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+            <span>✅ You have selected <strong>Table #{selectedTable}</strong> for your order.</span>
+            <button
+              type="button"
+              onClick={() => onSelectTable(null)}
+              className="btn-unselect-table"
+              style={{
+                background: 'transparent',
+                border: '1px solid #16a34a',
+                color: '#15803d',
+                padding: '0.2rem 0.6rem',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '0.8rem',
+                fontWeight: 600,
+              }}
+            >
+              ✕ Unselect
+            </button>
+          </div>
         ) : (
           <p className="banner-pending">
             ⚠️ Please click on an <strong>Available</strong> table above to link your order.
