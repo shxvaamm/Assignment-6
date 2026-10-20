@@ -69,7 +69,6 @@ assignment-6/
 │   │   ├── menuRoutes.js
 │   │   ├── orderRoutes.js
 │   │   └── tableRoutes.js
-│   ├── .env.example
 │   ├── package.json
 │   └── server.js
 ├── frontend/
@@ -105,7 +104,6 @@ assignment-6/
 │   │   ├── App.jsx
 │   │   ├── index.css
 │   │   └── main.jsx
-│   ├── .env.example
 │   ├── index.html
 │   ├── package.json
 │   └── vite.config.js
